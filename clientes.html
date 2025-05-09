@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Clientes | Menez Prof</title>
+  <script src="js/consultar.js" defer></script>
+  <link rel="stylesheet" href="css/reset.css"/>
+  <link rel="stylesheet" href="css/style.css"/>
+</head>
+<body>
+
+  <header>
+    <div class="encabezado">
+      <h1>Menez Prof</h1>
+      <p>Formación para el trabajo</p>
+    </div>
+    <nav>
+      <div class="logo">
+        <img src="Img/logo.jpg" alt="Logotipo de Menez Prof" />
+        <span>Menez Prof</span>
+      </div>
+      <div class="nav-links">
+        <a href="pagina.html">Inicio</a>
+        <a href="nosotros.html">Quienes somos</a>
+        <a href="clientes.html">Clientes</a>
+        <a href="Formulario.html">Contacto</a>
+    </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="card">
+      <h2 style="text-align: center;">Nuestros Clientes</h2>
+      <p style="text-align: center;">Consulta de datos y visualización gráfica de nuestros usuarios registrados.</p>
+
+      <div class="grafica-container">
+        <h1>Gráfica paises</h1>
+        <img src="http://127.0.0.1:5000/grafica/pais" alt="Gráfica pais" id="grafica/pais" />
+      </div>
+
+      <div class="grafica-container">
+        <h1>Gráfica servicios</h1>
+        <img src="http://127.0.0.1:5000/grafica/servicios" alt="Gráfica servicios" id="grafica/servicios" />
+      </div>
+    </section>
+  </main>
+
+  <footer id="contacto">
+    <div class="footer-content">
+      <p>&copy; 2025 Menez Prof S.A.S. Todos los derechos reservados.</p>
+      <p>Comunicate con nosotros: +57 304 6647628</p>
+      <div class="redes">
+        <a href="#"><i class="bi bi-facebook"></i></a>
+        <a href="#"><i class="bi bi-instagram"></i></a>
+        <a href="#"><i class="bi bi-twitter-x"></i></a>
+        <a href="#"><i class="bi bi-linkedin"></i></a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    const cards = document.querySelectorAll('.card');
+    const observer = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            entry.target.classList.add('visible');
+            observer.unobserve(entry.target);
+        }
+        });
+    });
+    cards.forEach(card => observer.observe(card));
+    </script>
+</body>
+</html>

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MENEZPROF</title>
+    <script src="js/insertar.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/formulario.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" />
+</head>
+<body>
+
+
+  
+  <header>
+    <div class="encabezado">
+      <h1>Menez Prof</h1>
+      <p>Formación para el trabajo</p>
+    </div>
+    <nav>
+      <div class="logo">
+        <img src="Img/logo.jpg" alt="Logotipo de Menez Prof" />
+        <span>Menez Prof</span>
+      </div>
+      <div class="nav-links">
+        <a href="pagina.html">Inicio</a>
+        <a href="nosotros.html">Quienes somos</a>
+        <a href="clientes.html">Clientes</a>
+        <a href="Formulario.html">Contacto</a>
+    </div>
+    </nav>
+  </header>
+
+    <fieldset>
+        <h1 id="title">Contactanos</h1>
+        <form id="formulario">
+          <label>nombre</label>
+          <input type="text" id="nombre" required>
+      
+          <label>documento</label>
+          <input type="number" id="documento" required>
+
+          <label>sexo</label>
+          <select id="sexo">
+            <option value="Femenino">Femenino</option>
+            <option value="Masculino">Masculino</option>
+          </select>
+      
+          <label>correo</label>
+          <input type="email" id="correo" required>
+      
+          <label>servicio</label>
+          <select id="servicio">
+            <option value="Excel">Excel</option>
+            <option value="Power_BY">Power BY</option>
+            <option value="Python">Python</option>
+            <option value="Ingles">Ingles</option>
+            <option value="Criptoactivos">Criptoactivos</option>
+            <option value="Finanzas">Finanzas</option>
+          </select>
+          
+
+
+          <label>pais</label>
+          <select id="pais">
+              <option value="Colombia">Colombia</option>
+              <option value="EE.UU">EE.UU</option>
+          </select>
+      
+          <label>mensaje</label>
+          <textarea id="mensaje"></textarea>
+      
+          <button type="submit">Guardar</button>
+      </form>
+
+    </fieldset>
+    
+    <footer id="contacto">
+      <div class="footer-content">
+        <p>&copy; 2025 Menez Prof S.A.S. Todos los derechos reservados.</p>
+        <p>Comunicate con nosotros: +57 304 6647628</p>
+        <div class="redes">
+          <a href="#"><i class="bi bi-facebook"></i></a>
+          <a href="#"><i class="bi bi-instagram"></i></a>
+          <a href="#"><i class="bi bi-twitter-x"></i></a>
+          <a href="#"><i class="bi bi-linkedin"></i></a>
+        </div>
+      </div>
+    </footer>
+    <script>
+      const cards = document.querySelectorAll('.card');
+      const observer = new IntersectionObserver(entries => {
+          entries.forEach(entry => {
+          if (entry.isIntersecting) {
+              entry.target.classList.add('visible');
+              observer.unobserve(entry.target);
+          }
+          });
+      });
+      cards.forEach(card => observer.observe(card));
+      </script>
+  </body>
+  </html>

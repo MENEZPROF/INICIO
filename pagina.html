@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menez Prof</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+</head>
+<body>
+    <header>
+        <div class="encabezado">
+            <h1>Menez Prof</h1>
+            <p>Formación para el trabajo</p>
+        </div>
+        <nav>
+            <div class="logo">
+                <img src="Img/logo.jpg" alt="Logotipo de Menez Prof" />
+                <span>Menez Prof</span>
+            </div>
+            <div class="nav-links">
+                <a href="pagina.html">Inicio</a>
+                <a href="nosotros.html">Quienes somos</a>
+                <a href="clientes.html">Clientes</a>
+                <a href="Formulario.html">Contacto</a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+    <!-- INICIO -->
+    <section id="inicio" class="seccion">
+        <div class="card hero">
+          <img src="Img/edu.jpg" alt="Educación online" class="hero-img" />
+          <h2>¡Bienvenido a Menez Prof!</h2>
+          <p>La plataforma que potencia tu futuro profesional desde casa.</p>
+          <a href="Formulario.html" class="btn-cta"><i class="bi bi-rocket-takeoff-fill"></i> Empieza ahora</a>
+        </div>
+      </section>
+      <section class="seccion beneficios">
+          <div class="card">
+            <h2>¿Por qué elegirnos?</h2>
+            <ul class="lista-beneficios">
+              <li><i class="bi bi-check-circle-fill"></i> Cursos 100% online, flexibles y actualizados.</li>
+              <li><i class="bi bi-check-circle-fill"></i> Profesores certificados con experiencia real.</li>
+              <li><i class="bi bi-check-circle-fill"></i> Plataforma intuitiva y fácil de usar.</li>
+              <li><i class="bi bi-check-circle-fill"></i> Certificados reconocidos.</li>
+            </ul>
+          </div>
+        </section>
+
+    <!-- SERVICIOS -->
+    <section id="servicios" class="seccion">
+        <div class="card">
+          <h2>Nuestros Servicios</h2>
+          <div class="galeria-servicios">
+            <div class="servicio"><img src="Img/excel.jpg" alt="Excel" /><p>Excel</p></div>
+            <div class="servicio"><img src="Img/power.jpg" alt="Power BI" /><p>Power BI</p></div>
+            <div class="servicio"><img src="Img/py.jpg" alt="Python" /><p>Python</p></div>
+            <div class="servicio"><img src="Img/ingles.jpg" alt="Inglés" /><p>Inglés</p></div>
+            <div class="servicio"><img src="Img/crip.jpg" alt="Criptoactivos" /><p>Criptoactivos</p></div>
+            <div class="servicio"><img src="Img/finan.jpg" alt="Finanzas" /><p>Finanzas</p></div>
+          </div>
+        </div>
+      </section>
+
+    <!-- TESTIMONIOS -->
+    <section class="seccion testimonios">
+        <h2>¿Qué opinan nuestros estudiantes?</h2>
+        <div class="grid-2">
+          <div class="card">
+            <p>"Gracias a Menez Prof conseguí trabajo en una empresa internacional."</p>
+            <p><strong>- Ana Rodríguez</strong></p>
+          </div>
+          <div class="card">
+            <p>"Los cursos de finanzas me ayudaron a organizar mi negocio y crecer."</p>
+            <p><strong>- Jorge Martínez</strong></p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer id="contacto">
+        <div class="footer-content">
+          <p>&copy; 2025 Menez Prof S.A.S. Todos los derechos reservados.</p>
+          <p>Comunicate con nosotros: +57 304 6647628</p>
+          <div class="redes">
+            <a href="#"><i class="bi bi-facebook"></i></a>
+            <a href="#"><i class="bi bi-instagram"></i></a>
+            <a href="#"><i class="bi bi-twitter-x"></i></a>
+            <a href="#"><i class="bi bi-linkedin"></i></a>
+          </div>
+        </div>
+      </footer>
+
+    <script>
+    const cards = document.querySelectorAll('.card');
+    const observer = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            entry.target.classList.add('visible');
+            observer.unobserve(entry.target);
+        }
+        });
+    });
+    cards.forEach(card => observer.observe(card));
+    </script>
+</body>
+</html>

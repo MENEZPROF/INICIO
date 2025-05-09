@@ -1,0 +1,36 @@
+[
+    {
+        "nombre": "Lucas",
+        "documento": "250100",
+        "correo": "lucas@gmail.com",
+        "servicio": "matematicas",
+        "pais": "colombia",
+        "mensaje": " dame informacion sobre"
+    },
+    {
+        "nombre": "Feder",
+        "documento": "240100",
+        "correo": "feder@gmail.com",
+        "servicio": "informatica",
+        "pais": "colombia",
+        "mensaje": " dame informacion sobre"
+    },
+    
+        {
+            "nombre": "marian",
+            "documento": "250101",
+            "correo": "marian@gmail.com",
+            "servicio": "matematicas",
+            "pais": "EE.UU",
+            "mensaje": " dame informacion sobre"
+        },
+        {
+            "nombre": "Federico",
+            "documento": "240100",
+            "correo": "feder.co@gmail.com",
+            "servicio": "matematicas",
+            "pais": "colombia",
+            "mensaje": " dame informacion sobre"
+        }
+    
+]

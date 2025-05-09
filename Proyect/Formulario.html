@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MENEZPROF</title>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="js/insertar.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/formulario.css">
+    
+   
+   
+</head>
+<body>
+
+
+  
+    <header >
+        <div class="encabezado">
+            <h1>Menez Prof</h1>
+            <p>Formación para el trabajo</p>
+        
+          </div>
+        
+          <nav>
+            <div class="logo">
+              <img src="Img/logo.jpg" alt="Logo Menez Prof">
+              <span>Menez Prof</span>
+            </div>
+            <div class="nav-links">
+              <a href="pagina.html">Inicio</a>
+              <a href="clientes.html">Clientes</a>
+              <a href="pagina.html">Sobre</a>
+              <a href="Formulario.html">Contacto</a>
+            </div>
+          </nav>
+     
+    </header>
+
+    <fieldset>
+        <h1 id="title">Contactanos</h1>
+        <form id="formulario">
+          <label>nombre</label>
+          <input type="text" id="nombre" required>
+      
+          <label>documento</label>
+          <input type="number" id="documento" required>
+      
+          <label>correo</label>
+          <input type="email" id="correo" required>
+      
+          <label>servicio</label>
+          <select id="servicio">
+            <option value=""></option>
+            <option value="Excel">Excel</option>
+            <option value="Power BY">Power BY</option>
+            <option value="Python">Python</option>
+            <option value="Ingles">Ingles</option>
+            <option value="Criptoactivos">Criptoactivos</option>
+            <option value="Finanzas">Finanzas</option>
+            
+          </select>
+          
+
+
+          <label>pais</label>
+          <select id="pais">
+              <option value="Colombia">Colombia</option>
+              <option value="EE.UU">EE.UU</option>
+          </select>
+      
+          <label>mensaje</label>
+          <textarea id="mensaje"></textarea>
+      
+          <button type="submit">Guardar</button>
+      </form>
+
+    </fieldset>
+
+</body>
+</html>
